@@ -1,0 +1,14 @@
+{
+  "name": "alfares-center-website",
+  "version": "4.0.0",
+  "description": "Al-Fares Computer Repair & Data Recovery Center Website with AI Chatbot",
+  "author": "Manus AI",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

@@ -1,0 +1,46 @@
+# Al-Fares Center Website - Netlify Configuration - Version 4.0.0
+# Last Updated: 2025-10-28
+
+[build]
+  # No build command needed for static site
+  publish = "."
+  
+[functions]
+  # Netlify Functions directory
+  directory = "netlify/functions"
+  # Node.js version
+  node_bundler = "esbuild"
+
+[[redirects]]
+  # SPA fallback (if needed in future)
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+  
+[[headers]]
+  # Security headers for all pages
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+[[headers]]
+  # Cache static assets
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    
+[[headers]]
+  # Cache CSS and JS
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+

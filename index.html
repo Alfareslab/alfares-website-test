@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" data-key="siteInfo.description" content="">
+    <meta name="keywords" data-key="siteInfo.keywords" content="">
+    <meta name="author" content="Manus AI">
+    <meta name="version" content="v4.1.0">
+    <title data-key="siteInfo.name.full">مركز الفارس</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot-widget.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="data/content-ar_v4.1.0.json" as="fetch" crossorigin>
+</head>
+<body>
+    
+    <!-- Header / Navigation -->
+    <header id="header" class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 data-key="siteInfo.name.short"></h1>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <ul class="nav-primary" id="navPrimary">
+                        <!-- Will be populated by JavaScript -->
+                    </ul>
+                    
+                    <!-- More Dropdown -->
+                    <div class="nav-more">
+                        <button class="btn-more" id="btnMore">
+                            <span data-key="ui.more">المزيد</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <ul class="nav-secondary" id="navSecondary">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <!-- Language Switcher -->
+                    <button class="btn-lang" id="btnLang" aria-label="Switch Language">
+                        <span class="lang-text">EN</span>
+                    </button>
+                </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Slider -->
+    <section id="hero" class="hero-slider">
+        <div class="slider-container">
+            <div class="slides" id="heroSlides">
+                <!-- Will be populated by JavaScript -->
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="slider-nav prev" id="sliderPrev" aria-label="Previous Slide">
+                <span>‹</span>
+            </button>
+            <button class="slider-nav next" id="sliderNext" aria-label="Next Slide">
+                <span>›</span>
+            </button>
+            
+            <!-- Pagination Dots -->
+            <div class="slider-pagination" id="sliderPagination">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title" data-key="about.title"></h2>
+            <p class="section-intro" data-key="about.intro"></p>
+            <p class="section-description" data-key="about.description"></p>
+            
+            <div class="features-grid" id="aboutFeatures">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Capabilities Section -->
+    <section id="capabilities" class="section capabilities-section">
+        <div class="container">
+            <h2 class="section-title" data-key="capabilities.title"></h2>
+            <p class="section-subtitle" data-key="capabilities.subtitle"></p>
+            
+            <div class="capabilities-grid" id="capabilitiesGrid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section id="process" class="section process-section">
+        <div class="container">
+            <h2 class="section-title" data-key="process.title"></h2>
+            <p class="section-subtitle" data-key="process.subtitle"></p>
+            
+            <div class="process-steps" id="processSteps">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews-section">
+        <div class="container">
+            <h2 class="section-title" data-key="reviews.title"></h2>
+            <p class="section-subtitle" data-key="reviews.subtitle"></p>
+            
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Articles Section -->
+    <section id="articles" class="section articles-section">
+        <div class="container">
+            <h2 class="section-title" data-key="articles.title"></h2>
+            <p class="section-subtitle" data-key="articles.subtitle"></p>
+            <p class="coming-soon" data-key="articles.message"></p>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            
+            <div class="contact-content">
+                <!-- Map -->
+                <div class="contact-map">
+                    <iframe 
+                        id="contactMap"
+                        src=""
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-address">
+                        <h3>العنوان</h3>
+                        <p data-key="contact.address.full"></p>
+                    </div>
+                    
+                    <!-- WhatsApp Sections -->
+                    <div class="whatsapp-sections" id="whatsappSections">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="social-media" id="socialMedia">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer" class="site-footer">
+        <div class="container">
+            <p class="footer-description" data-key="footer.description"></p>
+            <p class="footer-copyright" data-key="footer.copyright"></p>
+            <p class="footer-development" data-key="footer.development"></p>
+        </div>
+    </footer>
+    
+    <!-- Floating Buttons -->
+    <div class="floating-buttons" id="floatingButtons">
+        <!-- Will be populated by JavaScript -->
+    </div>
+    
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget-alfares" class="chatbot-widget-alfares">
+        <div class="chatbot-header-alfares">
+            <h3>المشخص الذكي</h3>
+            <button id="chatbot-close-alfares" class="chatbot-close-alfares">×</button>
+        </div>
+        <div id="chatbot-messages-alfares" class="chatbot-messages-alfares">
+            <!-- الرسائل ستظهر هنا -->
+        </div>
+        <div class="chatbot-input-alfares">
+            <input type="text" id="chatbot-input-field-alfares" class="chatbot-input-field-alfares" placeholder="اكتب رسالتك هنا...">
+            <button id="chatbot-send-alfares" class="chatbot-send-alfares">إرسال</button>
+        </div>
+    </div>
+    
+    <!-- Service Details Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/chatbot-widget.js"></script>
+</body>
+</html>
+

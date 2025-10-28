@@ -1,6 +1,6 @@
 /*
- * Al-Fares Chatbot Widget - Version 4.0.0
- * Last Updated: 2025-10-28
+ * Al-Fares Chatbot Widget - Version 4.2.0
+ * Last Updated: 2025-10-29
  * Author: Manus AI
  * Description: Chatbot widget logic for Al-Fares Center
  */
@@ -14,7 +14,7 @@ let isWaitingForResponse = false;
 // ===================================
 // API Configuration
 // ===================================
-const CHATBOT_API_URL = '/.netlify/functions/chat'; // Netlify Function endpoint
+const CHATBOT_API_URL = '/.netlify/functions/chat-background'; // Netlify Background Function endpoint
 
 // ===================================
 // Initialization
@@ -129,6 +129,25 @@ async function sendToAPI(message) {
                 newMessage: message
             })
         });
+
+        // Handle HTTP 202 (Accepted) for background processing
+        if (response.status === 202) {
+            // Hide typing indicator
+            hideTypingIndicator();
+            
+            // Show processing message
+            const processingMessage = 'جاري معالجة طلبك... سنرد عليك في أقرب وقت.';
+            addBotMessage(processingMessage);
+            
+            // Add to history
+            chatHistory.push({
+                sender: 'model',
+                text: processingMessage
+            });
+            
+            isWaitingForResponse = false;
+            return;
+        }
 
         if (!response.ok) {
             throw new Error('Failed to get response from chatbot API');
@@ -268,5 +287,5 @@ function resetChat() {
 }
 
 // Log version
-console.log('Al-Fares Chatbot Widget v4.0.0 - Loaded successfully');
+console.log('Al-Fares Chatbot Widget v4.2.0 - Loaded successfully');
 

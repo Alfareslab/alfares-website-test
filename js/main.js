@@ -1,6 +1,6 @@
 /*
- * Al-Fares Center Website - Version 4.1.0
- * Last Updated: 2025-10-28
+ * Al-Fares Center Website - Version 4.2.0
+ * Last Updated: 2025-10-29
  * Author: Manus AI
  * Description: Main JavaScript file for Al-Fares Computer Repair & Data Recovery Center
  */
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===================================
 async function loadContent(lang) {
     try {
-        const response = await fetch(`data/content-${lang}_v4.1.0.json`);
+        const response = await fetch(`data/content-${lang}_v4.2.0.json`);
         if (!response.ok) {
             throw new Error(`Failed to load content: ${response.status}`);
         }

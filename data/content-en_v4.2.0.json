@@ -1,0 +1,709 @@
+{
+  "metadata": {
+    "version": "4.1.0",
+    "language": "en",
+    "direction": "ltr",
+    "lastUpdated": "2025-10-28",
+    "author": "Manus AI"
+  },
+  "siteInfo": {
+    "name": {
+      "full": "Al-Fares Center for Computer Repair and Data Recovery",
+      "short": "Al-Fares Computer Repair & Data Recovery Center"
+    },
+    "description": "Al-Fares Center specializes in computer repair and data recovery in Jeddah. 12 years of experience in the field.",
+    "keywords": "data recovery, computer repair, Apple repair, Jeddah, Al-Fares, PC-3000",
+    "established": "2013",
+    "experience": "12"
+  },
+  "contact": {
+    "address": {
+      "street": "8010 Khalid bin Walid Street",
+      "district": "Al-Sharafiyah",
+      "city": "Jeddah",
+      "postalCode": "23218",
+      "full": "8010 Khalid bin Walid Street, Al-Sharafiyah, Jeddah 23218"
+    },
+    "map": {
+      "enabled": true,
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.4826919347697!2d39.14837087597429!3d21.552389980253173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b8db52!2z2YXYsdmD2LIg2KfZhNmB2KfYsdizINmE2LXZitin2YbYqSDYp9mE2YPZhdio2YrZiNiq2LEg2YjYp9iz2KrYudin2K_YqSDYp9mE2KjZitin2YbYp9iq!5e0!3m2!1sar!2ssa!4v1729789012345!5m2!1sar!2ssa",
+      "link": "https://maps.app.goo.gl/wkYxgszFi9SQzPdB8"
+    },
+    "phones": [
+      {
+        "id": "main",
+        "label": "Main Number",
+        "number": "966563747332",
+        "display": false,
+        "whatsapp": true,
+        "call": true,
+        "link": "https://wa.me/966563747332",
+        "callLink": "tel:+966563747332"
+      },
+      {
+        "id": "dataRecovery",
+        "label": "Data Recovery Department",
+        "number": "966507322542",
+        "display": false,
+        "whatsapp": true,
+        "call": true,
+        "link": "https://wa.me/966507322542",
+        "callLink": "tel:+966507322542"
+      }
+    ],
+    "messenger": {
+      "enabled": true,
+      "link": "https://m.me/YOUR_FACEBOOK_PAGE_ID",
+      "label": "Facebook Messenger"
+    },
+    "whatsappSections": [
+      {
+        "id": "computerRepair",
+        "label": "Computer & Apple Repair",
+        "number": "966563747332",
+        "link": "https://wa.me/966563747332",
+        "icon": "computer-repair"
+      },
+      {
+        "id": "dataRecovery",
+        "label": "Data Recovery Department",
+        "number": "966507322542",
+        "link": "https://wa.me/966507322542",
+        "icon": "data-recovery"
+      },
+      {
+        "id": "fastService",
+        "label": "Fast Service at Center",
+        "number": "966563747332",
+        "link": "https://wa.me/966563747332",
+        "icon": "fast-service"
+      }
+    ]
+  },
+  "socialMedia": {
+    "facebook": {
+      "enabled": true,
+      "url": "https://facebook.com/alfarescenter",
+      "label": "Facebook"
+    },
+    "twitter": {
+      "enabled": true,
+      "url": "https://twitter.com/alfarescenter",
+      "label": "Twitter"
+    },
+    "instagram": {
+      "enabled": true,
+      "url": "https://instagram.com/alfarescenter",
+      "label": "Instagram"
+    },
+    "youtube": {
+      "enabled": true,
+      "url": "https://youtube.com/@alfarescenter",
+      "label": "YouTube"
+    },
+    "linkedin": {
+      "enabled": true,
+      "url": "https://linkedin.com/company/alfarescenter",
+      "label": "LinkedIn"
+    }
+  },
+  "navigation": {
+    "primary": [
+      {
+        "id": "home",
+        "label": "Home",
+        "href": "#home"
+      },
+      {
+        "id": "services",
+        "label": "Our Services",
+        "href": "#services"
+      },
+      {
+        "id": "contact",
+        "label": "Contact Us",
+        "href": "#contact"
+      }
+    ],
+    "secondary": [
+      {
+        "id": "about",
+        "label": "About Us",
+        "href": "#about"
+      },
+      {
+        "id": "capabilities",
+        "label": "Our Capabilities",
+        "href": "#capabilities"
+      },
+      {
+        "id": "process",
+        "label": "How It Works",
+        "href": "#process"
+      },
+      {
+        "id": "reviews",
+        "label": "Customer Reviews",
+        "href": "#reviews"
+      },
+      {
+        "id": "articles",
+        "label": "Articles",
+        "href": "#articles"
+      }
+    ]
+  },
+  "hero": {
+    "slides": [
+      {
+        "id": "slide1",
+        "image": "assets/images/store_front-min.png",
+        "title": "Al-Fares Center for Computer Repair and Data Recovery",
+        "description": "12 years of experience serving you - Using the latest global technologies",
+        "cta": {
+          "text": "Contact Us Now",
+          "link": "#",
+          "action": "openChatbot"
+        },
+        "backgroundColor": "#F5F5F5",
+        "textColor": "#1f2937",
+        "ctaBackgroundColor": "#2563eb",
+        "ctaTextColor": "#ffffff"
+      },
+      {
+        "id": "slide2",
+        "image": "assets/images/apple_repair-min.png",
+        "title": "Specialists in Apple and MacBook Repair",
+        "description": "Professional repair for MacBook and iMac devices with genuine parts",
+        "cta": {
+          "text": "Learn More",
+          "link": "#",
+          "action": "openChatbot"
+        },
+        "backgroundColor": "#FFFFFF",
+        "textColor": "#1f2937",
+        "ctaBackgroundColor": "#10b981",
+        "ctaTextColor": "#ffffff"
+      },
+      {
+        "id": "slide3",
+        "image": "assets/images/data_recovery_equipment-min.png",
+        "title": "Data Recovery with Latest Global Equipment",
+        "description": "We use professional PC-3000 device to recover your data with 95% success rate",
+        "cta": {
+          "text": "Recover Your Data",
+          "link": "#",
+          "action": "openChatbot"
+        },
+        "backgroundColor": "#F5F5F5",
+        "textColor": "#1f2937",
+        "ctaBackgroundColor": "#2563eb",
+        "ctaTextColor": "#ffffff"
+      },
+      {
+        "id": "slide4",
+        "image": "assets/images/fast_service-min.png",
+        "title": "Fast and Reliable Service",
+        "description": "We provide fast repair service with warranty on all work",
+        "cta": {
+          "text": "Book Your Appointment",
+          "link": "#",
+          "action": "openChatbot"
+        },
+        "backgroundColor": "#F0F8FF",
+        "textColor": "#1f2937",
+        "ctaBackgroundColor": "#10b981",
+        "ctaTextColor": "#ffffff"
+      },
+      {
+        "id": "slide5",
+        "image": "assets/images/professional_team-min.png",
+        "title": "Professional Team and Advanced Equipment",
+        "description": "We work in a professional environment with the best equipment to ensure highest quality",
+        "cta": {
+          "text": "About Us",
+          "link": "#",
+          "action": "openChatbot"
+        },
+        "backgroundColor": "#FAFAFA",
+        "textColor": "#1f2937",
+        "ctaBackgroundColor": "#2563eb",
+        "ctaTextColor": "#ffffff"
+      }
+    ],
+    "settings": {
+      "autoplay": true,
+      "interval": 7000,
+      "pauseOnHover": true,
+      "showNavigation": true,
+      "showPagination": true
+    }
+  },
+  "about": {
+    "title": "Welcome to Al-Fares Center for Computer Repair and Data Recovery",
+    "intro": "Your specialized center for computer repair and data recovery in Jeddah. Providing professional services since 2013.",
+    "description": "At Al-Fares Center, we pride ourselves on providing the best computer repair and data recovery services in Jeddah. With over 12 years of experience, we use the latest global technologies such as the professional PC-3000 device to ensure the highest success rate in recovering your data.",
+    "features": [
+      {
+        "id": "experience",
+        "icon": "⏱️",
+        "title": "12 Years Experience",
+        "description": "More than a decade of expertise in the field"
+      },
+      {
+        "id": "equipment",
+        "icon": "🔧",
+        "title": "Latest Equipment",
+        "description": "We use the best global devices"
+      },
+      {
+        "id": "team",
+        "icon": "👥",
+        "title": "Professional Team",
+        "description": "Engineers and technicians trained to the highest standards"
+      },
+      {
+        "id": "warranty",
+        "icon": "✅",
+        "title": "Quality Guarantee",
+        "description": "Warranty on all work and repairs"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "dataRecovery",
+      "title": "Data Recovery",
+      "icon": "💾",
+      "description": "Professional recovery of lost data from all types of storage media",
+      "image": "assets/images/service-data-recovery.png",
+      "features": [
+        {
+          "title": "Hard Drive Recovery",
+          "description": "All types of HDD and SSD"
+        },
+        {
+          "title": "Memory Card Recovery",
+          "description": "SD Cards and Flash Memory"
+        },
+        {
+          "title": "RAID System Recovery",
+          "description": "All types of RAID and servers"
+        },
+        {
+          "title": "External Drive Recovery",
+          "description": "External HDDs and USB Drives"
+        }
+      ],
+      "cta": {
+        "text": "More",
+        "link": "#data-recovery-details"
+      },
+      "detailedContent": {
+        "intro": "Whatever type of files you have, we can recover all deleted and damaged files",
+        "description": "We use storage tools whether memory cards or flash drives to store photos and files, some of which may hold pictures representing specific memories of special value to us, so the damage or loss of those photos would cause us great sadness. Some lost files from memory or flash may be work-related or contain specific documents or scanned important files, and you may accidentally delete these files.",
+        "services": [
+          {
+            "title": "Data Recovery from Memory Cards and Flash Memory",
+            "description": "Lost data can be recovered from memory cards and flash memory if they have not been permanently deleted or the device is damaged due to mechanical or electronic failure. We use the latest specialized devices for data recovery that work on most types of memory and flash memory.",
+            "steps": [
+              "Ensure not to use the device after data loss",
+              "Use professional data recovery devices",
+              "Connect the memory to specialized computer",
+              "Search for lost data using advanced devices",
+              "Save recovered data securely"
+            ]
+          },
+          {
+            "title": "Data Recovery from Hard Drives",
+            "description": "We repair all types of hard drives whether IDE or SATA from all types of failures. Repair damaged and burned hard drives, whether laptop or PC hard drives, and repair external hard drives as well as hard drives that don't read.",
+            "cases": [
+              "Bad Sectors repair",
+              "Hard drive board repair",
+              "Data extraction from damaged drives",
+              "Firmware issues treatment",
+              "SSD repair of all types"
+            ]
+          },
+          {
+            "title": "File Recovery from RAID Systems and Servers",
+            "description": "We have a team of experts in data recovery from all RAID systems to solve all problems with servers and all different RAID systems from RAID 0 to RAID 10 through RAID 1 and RAID 5.",
+            "features": [
+              "Recovery from all RAID types",
+              "Server Storage system repair",
+              "Treatment of HDD and SSD drives in servers",
+              "Data recovery regardless of size and number of drives"
+            ]
+          }
+        ],
+        "equipment": [
+          {
+            "name": "PC-3000",
+            "description": "Professional device for recovering photos, videos, and audio files from memory"
+          },
+          {
+            "name": "Rusolut",
+            "description": "Specialized device for recovering photos and lost files from memory cards"
+          }
+        ]
+      }
+    },
+    {
+      "id": "appleRepair",
+      "title": "Apple Device Repair",
+      "icon": "🍎",
+      "description": "Specialized repair for MacBook and iMac devices with genuine parts",
+      "image": "assets/images/service-apple-repair.png",
+      "features": [
+        {
+          "title": "MacBook Repair",
+          "description": "All MacBook Pro and Air models"
+        },
+        {
+          "title": "iMac Repair",
+          "description": "All iMac models"
+        },
+        {
+          "title": "Genuine Parts",
+          "description": "We use certified genuine parts"
+        },
+        {
+          "title": "Repair Warranty",
+          "description": "Warranty on all repair work"
+        }
+      ],
+      "cta": {
+        "text": "More",
+        "link": "#apple-repair-details"
+      }
+    },
+    {
+      "id": "computerRepair",
+      "title": "Computer and Laptop Repair",
+      "icon": "💻",
+      "description": "Comprehensive repair for all types of computers and laptops",
+      "image": "assets/images/service-comprehensive-solutions.png",
+      "features": [
+        {
+          "title": "Laptop Repair",
+          "description": "All brands and models"
+        },
+        {
+          "title": "Desktop Computer Repair",
+          "description": "All types of PC Desktop"
+        },
+        {
+          "title": "Regular Maintenance",
+          "description": "Regular preventive maintenance"
+        },
+        {
+          "title": "Fault Repair",
+          "description": "Solving all technical problems"
+        }
+      ],
+      "cta": {
+        "text": "More",
+        "link": "#computer-repair-details"
+      },
+      "detailedContent": {
+        "intro": "Professional repair for all types of computers and laptops",
+        "description": "Al-Fares Center is one of the largest laptop repair centers in Jeddah, working in the field of electronic device repair and striving to solve all computer problems that customers may face.",
+        "services": [
+          {
+            "title": "External Maintenance",
+            "description": "Repair of faults resulting from dust accumulation and high temperature that lead to device freezing during work along with sudden faults"
+          },
+          {
+            "title": "Operating System and Software",
+            "description": "Repair of software faults, operating system, and files stored on any type of laptop"
+          },
+          {
+            "title": "Hard Drive",
+            "description": "Repair of hard drive faults, incorrect storage, and regular maintenance of hard drive parts"
+          }
+        ],
+        "brands": [
+          "Toshiba",
+          "Sony",
+          "HP",
+          "Acer",
+          "Dell",
+          "Asus",
+          "Lenovo",
+          "Samsung"
+        ]
+      }
+    }
+  ],
+  "capabilities": {
+    "title": "Our Capabilities",
+    "subtitle": "We use the latest technologies and advanced devices",
+    "items": [
+      {
+        "id": "pc3000",
+        "title": "Professional PC-3000 Device",
+        "description": "The most powerful device in the world for hard drive data recovery",
+        "icon": "🔬",
+        "image": "assets/images/tech-pc3000-pro.png"
+      },
+      {
+        "id": "cleanRoom",
+        "title": "Clean Room",
+        "description": "Professional dust-free work environment for safely opening hard drives",
+        "icon": "🏭",
+        "image": "assets/images/tech-clean-room.png"
+      },
+      {
+        "id": "expertTeam",
+        "title": "Specialized Technical Team",
+        "description": "Engineers and technicians trained to the highest level of competence",
+        "icon": "👨‍🔧",
+        "image": "assets/images/tech-expert-team.png"
+      }
+    ]
+  },
+  "process": {
+    "title": "How It Works",
+    "subtitle": "Simple steps to recover your data",
+    "steps": [
+      {
+        "number": "1",
+        "icon": "📞",
+        "title": "Contact Us",
+        "description": "Call us or send a WhatsApp message"
+      },
+      {
+        "number": "2",
+        "icon": "🔍",
+        "title": "Inspection and Diagnosis",
+        "description": "We inspect the device and accurately identify the problem"
+      },
+      {
+        "number": "3",
+        "icon": "💰",
+        "title": "Price Quote",
+        "description": "We provide you with a clear and specific price quote"
+      },
+      {
+        "number": "4",
+        "icon": "⚙️",
+        "title": "Repair or Recovery",
+        "description": "We start work upon your approval"
+      },
+      {
+        "number": "5",
+        "icon": "✅",
+        "title": "Delivery",
+        "description": "We deliver your device or data after completion"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "subtitle": "What our customers say about our services",
+    "displayMode": "random",
+    "displayCount": 3,
+    "items": [
+      {
+        "id": "review1",
+        "name": "Mohammed",
+        "rating": "5",
+        "text": "محل قمة في الاحترام في التعامل وشغل احترافي لي أكتر من ١٢ سنة بتعامل معاهم.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review2",
+        "name": "Mohammed Elnoor",
+        "rating": "5",
+        "text": "ناس محترمه والله تعامل راقي وغير كده اسعار فرق من السوق انصح بيهم.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review3",
+        "name": "فيصل الغامدي",
+        "rating": "4",
+        "text": "انصح بالتعامل ناس فاهمين في شغلهم بكل صراحة.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review4",
+        "name": "Menam Salman",
+        "rating": "4",
+        "text": "محل ممتاز وفي مصداقية في المواعيد ربنا يبارك فيكم ويوفقكم.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review5",
+        "name": "محمد الشهري",
+        "rating": "5",
+        "text": "مشاءالله تبارك الرحمن خدمة وقطع متوفره عندهم بنسبه لي الموضف محمد الأزهري قمة الأخلاق.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review6",
+        "name": "mohamed noor alsharif",
+        "rating": "4",
+        "text": "‏تم زيارة المحل المحل ممتاز جدا في التعامل في كل شيء صيانة وبرمجة. ❤️",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review7",
+        "name": "redwan مرغلاني",
+        "rating": "5",
+        "text": "اشكركم جداً على تعاونكم و سرعة انجازكم و دقتكم شكرا شكرا شكرا كذالك شكرا للأخ محمد الازهري.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review8",
+        "name": "Queen Eman",
+        "rating": "4",
+        "text": "خدمة ممتازه وتعامل راقي.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review9",
+        "name": "KONSTANTINOS LAPPAS",
+        "rating": "4",
+        "text": "Very fast service, everything as they told before and very pleasant staff.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review10",
+        "name": "Kamal Ali",
+        "rating": "5",
+        "text": "Professional work, amazing service and reasonable price 👍🏻👍🏻",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review11",
+        "name": "Mohamed Abdelhadi",
+        "rating": "4",
+        "text": "خدمه ممتازة في وقت قصير الله يوفقهم للخير والنجاح الدائم.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review12",
+        "name": "Nawaf Al Shehri",
+        "rating": "4",
+        "text": "ممتاز جداً وفاهم وأشكر المهندس أحمد على أخلاقه وشغله الزين.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review13",
+        "name": "Ahmed Elkhateeb",
+        "rating": "4",
+        "text": "ممتاز في الصيانه والتعامل.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review14",
+        "name": "ابو ريان",
+        "rating": "5",
+        "text": "ناس متمكنين من شغلهم كان عندي هاردسك قديم فوق العشرين سنه وشبه معدوم وقدرو يستخرجو المعلومات منه وفقهم الله.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review15",
+        "name": "Abdulkader Mohameed",
+        "rating": "4",
+        "text": "يعطيه العافية ماقصرو وكانت التجربة ممتازة معهم 👍.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review16",
+        "name": "عبدالله الزهراني",
+        "rating": "5",
+        "text": "اشكر المهندس محمد الازهري على تعاملة الجميل وخبرته في المهنه تفوق على الجميع.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review17",
+        "name": "عبدالله بصفر",
+        "rating": "5",
+        "text": "استاذ محمد اخلاق وشغل ورجال امين بصراحة من واقع تجربة 10/10 ❤️",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review18",
+        "name": "Abdulqader Almohsny",
+        "rating": "4",
+        "text": "انصح بشده شباب بجد محترمين ومتعاونين ربنا يوفقهم.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review19",
+        "name": "ابو ياسين الديكورات الخشبيه",
+        "rating": "4",
+        "text": "جدا ممتاز.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review20",
+        "name": "حامد موسى العيسي",
+        "rating": "4",
+        "text": "تعامل ممتاز وخدمة سريعة واسعار مناسبة.",
+        "date": "2025-10-20"
+      },
+      {
+        "id": "review21",
+        "name": "Ahmed Romyai",
+        "rating": "4",
+        "text": "معاملة محترمة وأمين وسرعة فى التنفيذ.",
+        "date": "2025-10-20"
+      }
+    ],
+    "autoRotate": true,
+    "rotateInterval": 7000
+  },
+  "floatingButtons": {
+    "enabled": true,
+    "position": "left",
+    "buttons": [
+      {
+        "id": "chatbot",
+        "type": "chatbot",
+        "label": "Smart Diagnostic",
+        "tooltip": "Get instant diagnosis for your issue",
+        "icon": "💬",
+        "backgroundColor": "#2563eb"
+      },
+      {
+        "id": "tiktok",
+        "type": "tiktok",
+        "label": "TikTok",
+        "link": "https://www.tiktok.com/@alfares.datarecovry",
+        "icon": "assets/icons/icon-tiktok.png",
+        "tooltip": "Follow us on TikTok",
+        "backgroundColor": "#000000"
+      }
+    ]
+  },
+  "articles": {
+    "title": "Articles",
+    "subtitle": "Useful technical articles",
+    "enabled": true,
+    "comingSoon": true,
+    "message": "Coming soon... We will add useful technical articles"
+  },
+  "footer": {
+    "description": "Al-Fares Center for Computer Repair and Data Recovery - 12 years of experience serving you",
+    "copyright": "© 2025 Al-Fares Center. All rights reserved.",
+    "development": "Developed by Manus AI"
+  },
+  "ui": {
+    "theme": {
+      "toggle": "Toggle Theme",
+      "light": "Light Mode",
+      "dark": "Dark Mode"
+    },
+    "language": {
+      "toggle": "Toggle Language",
+      "ar": "العربية",
+      "en": "English"
+    },
+    "more": "More",
+    "less": "Less",
+    "readMore": "Read More",
+    "close": "Close"
+  }
+}

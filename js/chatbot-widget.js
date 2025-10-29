@@ -130,25 +130,6 @@ async function sendToAPI(message) {
             })
         });
 
-        // Handle HTTP 202 (Accepted) for background processing
-        if (response.status === 202) {
-            // Hide typing indicator
-            hideTypingIndicator();
-            
-            // Show processing message
-            const processingMessage = 'جاري معالجة طلبك... سنرد عليك في أقرب وقت.';
-            addBotMessage(processingMessage);
-            
-            // Add to history
-            chatHistory.push({
-                sender: 'model',
-                text: processingMessage
-            });
-            
-            isWaitingForResponse = false;
-            return;
-        }
-
         if (!response.ok) {
             throw new Error('Failed to get response from chatbot API');
         }

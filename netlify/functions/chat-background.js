@@ -175,46 +175,6 @@ async function sendReportNotifications(history, finalResponse) {
 }
 
 // ===================================
-// Background Processing Function
-// ===================================
-async function processInBackground(history, newMessage) {
-    try {
-        console.log('Background processing started');
-        
-        // Format history for Gemini
-        const historyText = formatHistory(history)
-            .map(msg => `${msg.role}: ${msg.parts[0].text}`)
-            .join('\n');
-        
-        const fullPrompt = `${SYSTEM_PROMPT}\n\n--- سجل الحوار السابق ---\n${historyText}\n\n--- رسالة المستخدم الجديدة ---\nuser: ${newMessage}`;
-
-        // Generate response with retry
-        const geminiResponse = await callGeminiWithRetry(fullPrompt);
-
-        // Check if conversation is complete
-        const isConversationComplete = geminiResponse.includes("[END_OF_CONVERSATION]");
-
-        if (isConversationComplete) {
-            const fullHistory = [
-                ...history, 
-                { sender: 'user', text: newMessage }, 
-                { sender: 'model', text: geminiResponse }
-            ];
-            
-            // Send notifications
-            await sendReportNotifications(fullHistory, geminiResponse);
-        }
-
-        console.log('Background processing completed successfully');
-        return { success: true, response: geminiResponse };
-        
-    } catch (error) {
-        console.error('Error in background processing:', error);
-        return { success: false, error: error.message };
-    }
-}
-
-// ===================================
 // Main Handler (Netlify Background Function)
 // ===================================
 exports.handler = async (event, context) => {
@@ -255,23 +215,39 @@ exports.handler = async (event, context) => {
             };
         }
 
-        // Return immediate response (HTTP 202 Accepted)
-        // Processing will continue in background
-        console.log('Request received, starting background processing');
+        console.log('Request received, processing with Gemini AI');
         
-        // Start background processing (don't await)
-        processInBackground(history, newMessage).catch(err => {
-            console.error('Background processing error:', err);
-        });
+        // Format history for Gemini
+        const historyText = formatHistory(history)
+            .map(msg => `${msg.role}: ${msg.parts[0].text}`)
+            .join('\n');
+        
+        const fullPrompt = `${SYSTEM_PROMPT}\n\n--- سجل الحوار السابق ---\n${historyText}\n\n--- رسالة المستخدم الجديدة ---\nuser: ${newMessage}`;
 
-        // Return immediate response
+        // Generate response with retry (this is the key - we WAIT for the response)
+        const geminiResponse = await callGeminiWithRetry(fullPrompt);
+
+        // Check if conversation is complete
+        const isConversationComplete = geminiResponse.includes("[END_OF_CONVERSATION]");
+
+        if (isConversationComplete) {
+            const fullHistory = [
+                ...history, 
+                { sender: 'user', text: newMessage }, 
+                { sender: 'model', text: geminiResponse }
+            ];
+            
+            // Send notifications in background (don't wait for them)
+            sendReportNotifications(fullHistory, geminiResponse).catch(err => {
+                console.error('Error sending notifications:', err);
+            });
+        }
+
+        // Return the actual Gemini response to the user
         return {
-            statusCode: 202,
+            statusCode: 200,
             headers,
-            body: JSON.stringify({ 
-                status: 'processing',
-                message: 'جاري معالجة طلبك...'
-            })
+            body: JSON.stringify({ response: geminiResponse })
         };
 
     } catch (error) {

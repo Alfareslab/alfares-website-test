@@ -1,5 +1,5 @@
 /**
- * Al-Fares Chatbot Widget - Version 4.2.3
+ * Al-Fares Chatbot Widget - Version 4.2.4
  * Last Updated: 2025-10-29
  * Author: Manus AI
  * Description: Chatbot widget logic with detailed logging for debugging
@@ -14,7 +14,7 @@ let isWaitingForResponse = false;
 // ===================================
 // API Configuration
 // ===================================
-const CHATBOT_API_URL = '/.netlify/functions/chat-background'; // Netlify Background Function endpoint
+const CHATBOT_API_URL = '/.netlify/functions/chat'; // Netlify Function endpoint
 
 // ===================================
 // Initialization

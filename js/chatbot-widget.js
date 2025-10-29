@@ -119,6 +119,10 @@ async function sendToAPI(message) {
     isWaitingForResponse = true;
 
     try {
+        console.log('Sending request to:', CHATBOT_API_URL);
+        console.log('Message:', message);
+        console.log('History:', chatHistory);
+
         const response = await fetch(CHATBOT_API_URL, {
             method: 'POST',
             headers: {
@@ -130,12 +134,24 @@ async function sendToAPI(message) {
             })
         });
 
+        console.log('Response status:', response.status);
+        console.log('Response ok:', response.ok);
+
         if (!response.ok) {
-            throw new Error('Failed to get response from chatbot API');
+            const errorText = await response.text();
+            console.error('Error response:', errorText);
+            throw new Error(`API returned ${response.status}: ${errorText}`);
         }
 
         const data = await response.json();
+        console.log('Response data:', data);
+        
         const botResponse = data.response;
+        
+        if (!botResponse) {
+            console.error('No response in data:', data);
+            throw new Error('No response received from API');
+        }
 
         // Hide typing indicator
         hideTypingIndicator();

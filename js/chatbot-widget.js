@@ -1,8 +1,8 @@
-/*
- * Al-Fares Chatbot Widget - Version 4.2.0
+/**
+ * Al-Fares Chatbot Widget - Version 4.2.3
  * Last Updated: 2025-10-29
  * Author: Manus AI
- * Description: Chatbot widget logic for Al-Fares Center
+ * Description: Chatbot widget logic with detailed logging for debugging
  */
 
 // ===================================
